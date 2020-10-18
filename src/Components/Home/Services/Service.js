@@ -6,7 +6,7 @@ import './ServicesDetail.css';
 const Services = () => {
     const [serviceData, setServiceData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/service')
+        fetch('https://rocky-plains-35683.herokuapp.com/service')
             .then(res => res.json())
             .then(data => setServiceData(data))
     }, [])
@@ -29,7 +29,7 @@ const Services = () => {
                                     {
                                         service.image ? <img style={{ height: '50px' }} src={`data:image/png;base64,${service.image.img}`} />
                                             :
-                                            <img style={{ height: '50px' }} className="img-fluid mb-3" src={`http://localhost:5000/${service.img}`} alt="" />
+                                            <img style={{ height: '50px' }} className="img-fluid mb-3" src={`https://rocky-plains-35683.herokuapp.com/${service.img}`} alt="" />
                                     }
                                     <h5 className="mt-3 mb-3">{service.name}</h5>
                                     <p className="text-secondary">${service.Description}</p>

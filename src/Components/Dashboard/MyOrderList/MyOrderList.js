@@ -10,7 +10,7 @@ const MyOrderList = () => {
 
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/orders?email=' + loggedInUser.email)
+        fetch('https://rocky-plains-35683.herokuapp.com/orders?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -35,7 +35,7 @@ const MyOrderList = () => {
                                                     {
                                                         Order.image ? <img style={{ borderRadius: '50px' }} width="60" src={`data:image/png;base64,${Order.image.img}`} />
                                                             :
-                                                            <img style={{ borderRadius: '50px' }} width="60" className="img-fluid mb-3" src={`http://localhost:5000/${Order.img}`} alt="" />
+                                                            <img style={{ borderRadius: '50px' }} width="60" className="img-fluid mb-3" src={`https://rocky-plains-35683.herokuapp.com/${Order.img}`} alt="" />
                                                     }
                                                     <div>
                                                         <h6 className="text-primary">{Order.serviceName} </h6>

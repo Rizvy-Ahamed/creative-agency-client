@@ -14,14 +14,14 @@ const ServiceList = () => {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/allServiceList')
+        fetch('https://rocky-plains-35683.herokuapp.com/allServiceList')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
 
 
     const change = (e, id) => {
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`https://rocky-plains-35683.herokuapp.com/update/${id}`, {
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({status: e.value})
