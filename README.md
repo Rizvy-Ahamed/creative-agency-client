@@ -10,18 +10,18 @@ User will be able to see their work progress through the status.
 An admin can add services and make more admins.
 Admin will be able to change the status of orders.
 # Technology Used
--React.js
--react-hook-form
--react-elastic-carousal
--react-router-dom
--Firebase auth
--Firebase hosting
--custom css
--Bootstrap
--Node.js
--Express.js
--MongoDB
--Base64
--Heroku deploy
-[LIVE SITE](creative-agency-4fcd8.web.app/)
-[Backend Repository](https://github.com/Rizvy97/creative-agency-server)
+- React.js
+- react-hook-form
+- react-elastic-carousal
+- react-router-dom
+- Firebase auth
+- Firebase hosting
+- custom css
+- Bootstrap
+- Node.js
+- Express.js
+- MongoDB
+- Base64
+- Heroku deploy
+# [LIVE SITE](creative-agency-4fcd8.web.app/)
+# [Backend Repository](https://github.com/Rizvy97/creative-agency-server)
